@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body onresize="resize()">
+    <div class="container">
+        <h1>Monitor my average</h1>
+        <div class="classes">
+            <div class="physics">
+                <label>Physics</label>
+                <div class="average_physics"></div>
+            </div>
+            <button class='add_score_physics popup' onclick="add_to_physics()">+
+                <span class="popuptext" id="myPopup">
+                    <label for="popup">Please add score(%):</label>
+                    <input type="number">
+                    <input type="button" value="OK" class="physics_input" onclick='physics_ok()'>
+            </span>
+            </button>
+
+
+            <div class="chemistry">
+                <label>Chemistry</label>
+                <div class="average_chemistry" onclick="add_to_chemistry()"></div>
+            </div>
+            <button class='add_score_chemistry' onclick="add_to_maths()">+</button>
+            <div class="maths">
+                <label>Maths</label>
+                <div class="average_maths"></div>
+            </div>
+            <button class='add_score_maths'>+</button>
+        </div>
+
+    </div>
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

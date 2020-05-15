@@ -1,0 +1,151 @@
+* {
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 60%;
+    /* border: solid 10px black; */
+    margin-left: 20%;
+    text-align: center;
+}
+
+.classes {
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 1.5rem;
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: blue;
+}
+
+h1 {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.physics {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.add_score_physics {
+    float: left;
+    width: 10%;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-left: 40%;
+}
+
+.chemistry {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.add_score_chemistry {
+    float: left;
+    width: 10%;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-left: 40%;
+}
+
+.maths {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.add_score_maths {
+    float: left;
+    width: 10%;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-left: 40%;
+}
+
+label {
+    transition: background 1s;
+    padding: 5px;
+}
+
+label:hover {
+    cursor: pointer;
+    background: blue;
+    color: white;
+}
+
+button {
+    border: none;
+    width: 20px;
+    font-size: 1.5rem;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* The actual popup */
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 200%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+
+/* Toggle this class - hide and show the popup */
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.physics_input {
+    width: 40px;
+    text-align: center;
+}
